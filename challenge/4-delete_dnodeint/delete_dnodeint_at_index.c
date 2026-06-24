@@ -44,7 +44,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	else
 	{
 		tmp = *head;
-		/* fixed link: head.prev.next.next */
+		/*head.prev.next.next*/
 		(*head)->prev->next = (*head)->next;
 		if ((*head)->next != NULL)
 		{
